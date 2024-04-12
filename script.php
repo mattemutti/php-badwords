@@ -19,20 +19,18 @@ $lenghtParagGenerate= strlen(str_replace($badWord, "***", $paragrafo));
 </head>
 <body>
 
+	<h1>Paragrafo Originale</h1>
 	<div>
-		<p>
-			<?= $paragrafo . strlen($paragrafo) ?>
-		</p>
+		<textarea name="" id="" cols="30" rows="10"><?= $paragrafo ?></textarea>
 		<h3>La lunghezza del paragrafo è di: <?= strlen($paragrafo) ?> caratteri</h3>
 	</div>
-	<h3>Paragrafo Oscurato</h3>
+	<h2>Paragrafo Oscurato</h2>
 	<div>
-		<p>
-			<?= str_replace($badWord, "***", $paragrafo) ?>
-		</p>
+		<textarea name="" id="" cols="30" rows="10"><?= str_replace($badWord, "***", $paragrafo) ?></textarea>
 		<h3>La lunghezza del paragrafo è di: <?= $lenghtParagGenerate ?> caratteri</h3>
-
 	</div>
+			
+
 	
 </body>
 </html>

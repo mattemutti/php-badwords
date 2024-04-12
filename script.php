@@ -4,12 +4,8 @@ $paragrafo = $_GET["parag"];
 $badWord = $_GET["word"];
 
 //echo $paragrafo;
-echo $badWord;
-strlen($paragrafo)
-
-
-// str_replace(porzioneDaModificare, conCosa, stringa) - sostituisce una porzione di una stringa con un nuovo valore 
-
+//echo $badWord;
+//strlen($paragrafo)
 
 ?>
 
@@ -22,11 +18,20 @@ strlen($paragrafo)
 </head>
 <body>
 
-	<p>
-		<?= $paragrafo . strlen($paragrafo) ?>
-	</p>
-		
-	<h3>La lunghezza del paragrafo è di: <?= strlen($paragrafo) ?> caratteri</h3>
+	<div>
+		<p>
+			<?= $paragrafo . strlen($paragrafo) ?>
+		</p>
+		<h3>La lunghezza del paragrafo è di: <?= strlen($paragrafo) ?> caratteri</h3>
+	</div>
+	<h3>Paragrafo Oscurato</h3>
+	<div>
+		<p>
+			<?= str_replace($badWord, "***", $paragrafo) ?>
+		</p>
+		<h3>La lunghezza del paragrafo è di: <?= strlen($paragrafo) ?> caratteri</h3>
+
+	</div>
 	
 </body>
 </html>

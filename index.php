@@ -23,7 +23,9 @@ $word = "Ciao";
 		<div>
 			<textarea name="parag" id="paragraf" cols="30" rows="10"></textarea>
 		</div>
+
 		<!-- <input type="text" name="parag" placeholder="Inserisci paragrafo"> -->
+		<label for="">Inserisci la parola da oscurare</label>
 		<div>
 			<input type="text" name="word" placeholder="Parola da oscurare">
 		</div>

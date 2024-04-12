@@ -2,6 +2,10 @@
 
 $word = "Ciao";
 
+
+
+
+
 ?>
 
 
@@ -14,10 +18,16 @@ $word = "Ciao";
 </head>
 <body>
 
-<Form action="script.php" method="GET">
-	<input type="text" name="parag">
-	<input type="text" name="word">
-	<button type="submit">Check</button>
+	<label for="">Inserisci il testo</label>
+	<Form action="script.php" method="GET">
+		<div>
+			<textarea name="parag" id="paragraf" cols="30" rows="10"></textarea>
+		</div>
+		<!-- <input type="text" name="parag" placeholder="Inserisci paragrafo"> -->
+		<div>
+			<input type="text" name="word" placeholder="Parola da oscurare">
+		</div>
+		<button type="submit">Check</button>
 </Form>
 	
 </body>

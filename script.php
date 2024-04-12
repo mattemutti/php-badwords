@@ -2,6 +2,7 @@
 
 $paragrafo = $_GET["parag"];
 $badWord = $_GET["word"];
+$lenghtParagGenerate= strlen(str_replace($badWord, "***", $paragrafo));
 
 //echo $paragrafo;
 //echo $badWord;
@@ -29,7 +30,7 @@ $badWord = $_GET["word"];
 		<p>
 			<?= str_replace($badWord, "***", $paragrafo) ?>
 		</p>
-		<h3>La lunghezza del paragrafo è di: <?= strlen($paragrafo) ?> caratteri</h3>
+		<h3>La lunghezza del paragrafo è di: <?= $lenghtParagGenerate ?> caratteri</h3>
 
 	</div>
 	

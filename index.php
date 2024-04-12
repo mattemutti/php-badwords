@@ -14,9 +14,11 @@ $word = "Ciao";
 </head>
 <body>
 
-<h1>
-	<?= $word  ?>
-</h1>
+<Form action="script.php" method="GET">
+	<input type="text" name="parag">
+	<input type="text" name="word">
+	<button type="submit">Check</button>
+</Form>
 	
 </body>
 </html>
